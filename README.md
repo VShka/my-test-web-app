@@ -4,7 +4,7 @@
 # Стек: 
 - Python3
 - Фреймворк Flask
-- СУБД sqlite
+- СУБД SQLite
 - Bootstrap 4
 
 # Что можно делать?
