@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Форма обратной связи
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Форма обратной связи</h1>
+    <form action="/comment" method="post" class="container">
+        <input type="text" name="second_name" class="form-control" placeholder="Фамилия" required><br>
+        <input type="text" name="first_name" class="form-control" placeholder="Имя" required><br>
+        <input type="text" name="patronymic" class="form-control" placeholder="Отчество"><br>
+        <input type="text" name="region" class="form-control" placeholder="Регион"><br>
+        <input type="text" name="city" class="form-control" placeholder="Город"><br>
+        <input type="tel" name="tel" class="form-control" placeholder="Номер телефона"><br>
+        <input type="email" name="email" class="form-control" placeholder="e-mail"><br>
+        <textarea name="text" class="form-control" placeholder="Комментарий"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Отправить">
+    </form>
+</div>
+{% endblock %}
